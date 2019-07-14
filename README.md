@@ -11,9 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites 📋
 
 ```
-Docker-Compose
+Docker-Compose:
 Docker
-
+Github client
 ```
 
 ### Installing 🔧
@@ -23,7 +23,12 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-Give the example
+For using the webservice, it is required to first generate a Bear token as well as a normal one for interacting with git API and git operations. Moreover, after obtaining the tokens, the .env file ought to be modified to add the required information:
+> - ACCESS_TOKEN="Personal Access Token"
+> - BEAR_TOKEN="Oauth bear token"
+> - GITHUB_SECRET="Secret to authenticate with Github Webhook"
+> - APP_PORT=8080
+
 ```
 
 And repeat
