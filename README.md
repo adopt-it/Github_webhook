@@ -1,6 +1,6 @@
 # GitHub API Challenge
 
-Simple web service that listens for organization events to know when a repository has been created. When the repository is created, the following actions are automated:
+Simple web service that listens for organization events to know when a repository has been created, for which the following actions are automated:
  - The protection of the master branch. 
  - Personal notification with an @mention in an issue within the repository outlining the protections that were added.
 
