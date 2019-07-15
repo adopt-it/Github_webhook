@@ -17,7 +17,7 @@ Optional:
 
 ### Prerequisites 📋
 
-Since the webservice will be launched as a microservice, it can be platform-independent as long as the following requirements are satisfied and installed onto the OS:
+Because of the fact that the webservice will be launched as a microservice, it can be platform-independent as long as the following requirements are satisfied and installed onto the OS:
 ```
 Docker-Compose (tested on version 3.7)
 Docker (tested on version 18.09.0, build 4d60db4)
