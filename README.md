@@ -50,6 +50,10 @@ docker-compose up -d --build --force-recreate
 ```
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
 
+After, access ngrok container via your browser by going to localhost:**APP_PORT**, with the port you have indicated into the properties .env file to obtain the webservice url to be the webhook listener for your github account:
+![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Ngrok_img.png)
+
+
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests ⚙️
