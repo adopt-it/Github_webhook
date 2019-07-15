@@ -89,7 +89,7 @@ Also, It is recommended to run it on a Unix-based OS.
 ## Built With 🛠️
 
 * [Docker compose](http://www.dropwizard.io/1.0.2/docs/) - Tool for defining multi-container apps.
-* [Python](https://www.python.org/) - Intrerpreted programming language.
+* [Python](https://www.python.org/) - Interpreted programming language.
 * [Github API](https://developer.github.com/webhooks/#events) - GitHub API for the operations.
 * [Flask web framework](https://flask.palletsprojects.com/en/1.0.x/) - Used to create the webservice in a more robust way.
 * [Ngrok](https://ngrok.com/) - Used to generate public url's with embedded security for exposing web services, applications, etc.
