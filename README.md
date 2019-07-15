@@ -6,16 +6,20 @@ Dockerized web service that listens for organization events to know when a repos
 
 ## Getting Started 🚀
 
-First, the following requirements have to be satisfied for the tool to work:
+First, some things you will need:
 
-- a GitHub account
-- an organization (you can create one for free)
-- a repository
+- A GitHub account
+- An organization (you can create one for free)
+- A repository
 
 ### Prerequisites 📋
 
+Since the webservice will be launched as a microservice, it will be platform-independent as long as the following requirements are satisfied:
 ```
-Docker-Compose:
+- OS:
+  - Mac OS 
+  - GNU/Linux
+Docker-Compose
 Docker
 Github client
 ```
