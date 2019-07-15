@@ -14,11 +14,11 @@ First, some things you will need:
 
 ### Prerequisites 📋
 
-Since the webservice will be launched as a microservice, it will be platform-independent as long as the following requirements are satisfied:
+Since the webservice will be launched as a microservice, it will be platform-independent as long as the following requirements are satisfied and installed onto the OS:
 ```
-- OS:
-  - Mac OS 
-  - GNU/Linux
+* OS:
+  * Mac OS (the webservice was developed into MacOS Mojave 10.14.5)
+  * GNU/Linux or any Unix-based supporting docker
 Docker-Compose
 Docker
 Github client
