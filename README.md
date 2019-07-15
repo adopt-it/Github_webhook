@@ -45,9 +45,10 @@ docker-compose up -d --build --force-recreate
 - Another one with the python webhook receiving github webhook events and acting accordingly.
 
 ```
-![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
+
 
 ```
+![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
 
 End with an example of getting some data out of the system or using it for a little demo
 
