@@ -8,9 +8,9 @@ Dockerized web service that listens for organization events to know when a repos
 
 First, some things you will need:
 
-- A GitHub account
-- An organization (you can create one for free)
-- A repository
+* A GitHub account
+* An organization (you can create one for free)
+* A repository
 
 ### Prerequisites 📋
 
