@@ -10,10 +10,10 @@ First, some things you will need:
 
 * A GitHub account
 * An organization (you can create one for free)
-* A repository
+* A github repository
 
 Optional: 
-* Since Ngrok creates a public url for your webservice, an optional Ngrok account can be created in order that the Ngrok url does not time out. (https://dashboard.ngrok.com/login)
+* Since Ngrok creates a public url for your webservice (in this case the github webhook url), an optional Ngrok account (https://dashboard.ngrok.com/login) can be created in order that the public Ngrok url does not time out. 
 
 ### Prerequisites 📋
 
@@ -119,4 +119,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-* https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
+*https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
