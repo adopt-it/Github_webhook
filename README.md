@@ -73,7 +73,7 @@ Moreover, after creating a new github repository, the following actions are goin
 * A new issue will be opened stating which actions have been performed onto the repo and with a @mention to the user who launched it.
 * E-mail will be sent from github to the user.
 
-![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Gif_master_protected.gif))
+![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Gif_master_protected.gif)
 
 ## Deployment 📦
 
@@ -90,7 +90,7 @@ Also, It is recommended to run it on a Unix-based OS.
 
 * [Docker compose](http://www.dropwizard.io/1.0.2/docs/) - Tool for defining multi-container apps.
 * [Python](https://www.python.org/) - Intrerpreted programming language.
-* [Github API] (https://developer.github.com/webhooks/#events) - GitHub API for the operations.
+* [Github API](https://developer.github.com/webhooks/#events) - GitHub API for the operations.
 * [Flask web framework](https://flask.palletsprojects.com/en/1.0.x/) - Used to create the webservice in a more robust way.
 * [Ngrok](https://ngrok.com/) - Used to generate public url's with embedded security for exposing web services, applications, etc.
 
