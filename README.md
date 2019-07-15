@@ -18,23 +18,34 @@ Github client
 
 ### Installing 🔧
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-For using the webservice, it is required to first generate a Bear token as well as a normal one for interacting with git API and git operations. Moreover, after obtaining the tokens, the .env file ought to be modified to add the required information:
-> - ACCESS_TOKEN="Personal Access Token"
-> - BEAR_TOKEN="Oauth bear token"
-> - GITHUB_SECRET="Secret to authenticate with Github Webhook"
-> - APP_PORT=8080
+First, ater cloning the repository, it is first required to get some useful data for using the webservice, including the following within your github account:
+- A Bear token (**BEAR_TOKEN**) as well as a normal one (**ACCESS_TOKEN**) for authentication.
+- Specifying a github secret (**GITHUB_SECRET**) you can create from your own.
+- Choosing an application port (**APP_PORT**), which the containers are going to utilize and be attached to.
+Moreover, after obtaining the tokens, the .env properties' file ought to be modified, wherein the variables are to be added. 
 
 ```
+- ACCESS_TOKEN="Personal Access Token"
+- BEAR_TOKEN="Oauth bear token"
+- GITHUB_SECRET="Secret to authenticate with Github Webhook"
+- APP_PORT=8080 
+```
 
-And repeat
+After editting the file, you can source it, to store the variables for docker-compose to use them. Make sure you are located in the repository root location.
 
 ```
-until finished
+source .env
+```
+
+Next, the docker compose file already specifies the out-of-the box instructions to generate two containers:
+```
+docker-compose up -d --build --force-recreate
+```
+- One with Ngrok to generate a publicly available link, which the github webhook will send events to. This will be attached to the **APP_PORT** var specified in the .env file.
+- Another one with the python webhook receiving github webhook events and acting accordingly.
+
+```
+s
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
