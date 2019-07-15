@@ -17,48 +17,50 @@ Optional:
 
 ### Prerequisites 📋
 
-Since the webservice will be launched as a microservice, it will be platform-independent as long as the following requirements are satisfied and installed onto the OS:
+Since the webservice will be launched as a microservice, it can be platform-independent as long as the following requirements are satisfied and installed onto the OS:
 ```
-OS:
-- Mac OS (the webservice was developed into MacOS Mojave 10.14.5)
-- GNU/Linux or any Unix-based supporting docker & git
 Docker-Compose
 Docker
 Github client
 ```
+For reference, the webservice was tested under MacOS Mojave 10.14.5.
 
 ### Installing 🔧
 
 First, ater cloning the repository, it is first required to get some useful data for using the webservice, including the following within your github account:
 - A Bear token (**BEAR_TOKEN**) as well as a normal one (**ACCESS_TOKEN**) for authentication.
 - Specifying a github secret (**GITHUB_SECRET**) you can create from your own.
-- Choosing an application port (**APP_PORT**), which the containers are going to utilize and be attached to.
-Moreover, after obtaining the tokens, the .env properties' file ought to be modified, wherein the variables are to be added. 
+- Choosing a ngrok port (**PANEL_PORT**), which the ngrok web panel will be accessible from.
+- If you have created a Ngrok account, you can specify the (**NGROK_AUTH**) token, otherwise the public url will only last around 9 hours.
+
+Moreover, after obtaining the tokens, one can indicate either a different property file or use the default one (.env_webservice), wherein the variables for the containarized webservice need to be added. 
 
 ```
+$ cat .env_webservice
 - ACCESS_TOKEN="Personal Access Token"
 - BEAR_TOKEN="Oauth bear token"
 - GITHUB_SECRET="Secret to authenticate with Github Webhook"
-- APP_PORT=8080 
+- APP_PORT=8080 (Webservice port, which the Ngrok will generate the public url for, no need to change)
+- NGROK_AUTH="Optional Ngrok auth token"
+- PANEL_PORT="Port under which Ngrok web panel will run"
 ```
-
-After editting the file, you can source it, to store the variables for docker-compose to use them. Make sure you are located in the repository root location.
+or set your own one by exporting the variable FILE_NAME, whose format is "KEY=VALUE":
 
 ```
-source .env
+export FILE_NAME=".myPropertyFile"
 ```
 
 Next, the docker compose file already specifies the out-of-the box instructions to generate two containers:
 ```
 docker-compose up -d --build --force-recreate
 ```
-- One with Ngrok to generate a publicly available link, which the github webhook will send events to. This will be attached to the **APP_PORT** var specified in the .env file.
+- One with Ngrok to generate a publicly available link, which the github webhook will send events to. The url can be found on the Ngrok web panel, which has been launched into localhost:**PANEL_PORT** as per the property file.
 - Another one with the python webhook receiving github webhook events and acting accordingly.
 
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
 
-After, access ngrok container via your browser by going to localhost:**APP_PORT**, with the port you have indicated into the properties .env file to obtain the webservice url to be used as the webhook listener for your github account:
-![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Ngrok_img.png)
+After, access ngrok container via your browser by going to localhost:**APP_PORT**, with the port you have indicated into the property file url to be used as the webhook listener for your github account:
+![alt text]()
 
 this url will have to be registered into your github account webhook section:
 https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
