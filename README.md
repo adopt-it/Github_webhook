@@ -6,12 +6,23 @@ Dockerized web service that listens for organization events to know when a repos
 
 ## Getting Started 🚀
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+First, some things you will need:
+
+* A GitHub account
+* An organization (you can create one for free)
+* A github repository
+
+Optional: 
+* Since Ngrok creates a public url for your webservice (in this case the github webhook url), an optional Ngrok account (https://dashboard.ngrok.com/login) can be created in order that the public Ngrok url does not time out. 
 
 ### Prerequisites 📋
 
+Since the webservice will be launched as a microservice, it will be platform-independent as long as the following requirements are satisfied and installed onto the OS:
 ```
-Docker-Compose:
+OS:
+- Mac OS (the webservice was developed into MacOS Mojave 10.14.5)
+- GNU/Linux or any Unix-based supporting docker & git
+Docker-Compose
 Docker
 Github client
 ```
@@ -44,11 +55,14 @@ docker-compose up -d --build --force-recreate
 - One with Ngrok to generate a publicly available link, which the github webhook will send events to. This will be attached to the **APP_PORT** var specified in the .env file.
 - Another one with the python webhook receiving github webhook events and acting accordingly.
 
-```
-
-
-```
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
+
+After, access ngrok container via your browser by going to localhost:**APP_PORT**, with the port you have indicated into the properties .env file to obtain the webservice url to be used as the webhook listener for your github account:
+![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Ngrok_img.png)
+
+this url will have to be registered into your github account webhook section:
+https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
+
 
 End with an example of getting some data out of the system or using it for a little demo
 
@@ -105,4 +119,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-* https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
+*https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
