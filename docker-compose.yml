@@ -3,27 +3,30 @@ version: '3.7'
 services:
   ngrok_app:
     image: wernight/ngrok
+    env_file: ${FILE_NAME:-.env_webservice}
     ports:
-      - "5050:4040"
+      - "${PANEL_PORT:-5050}:4040"
     environment:
-      - NGROK_PORT=web_service:${APP_PORT}
+      - NGROK_PORT=web_service:${APP_PORT:-8080}
+      - NGROK_AUTH="${NGROK_AUTH:-}"
     depends_on:
       - web_service
     networks:
       - hook_network
   web_service:
+    env_file: ${FILE_NAME:-.env_webservice}
     build:
       context: .
       dockerfile: Dockerfile_Hook
       args:
-        - APP_PORT=${APP_PORT}
+        - APP_PORT=${APP_PORT:-8080}
     expose:
-      - "${APP_PORT}"
+      - ${APP_PORT:-8080}
     environment:
       - ACCESS_TOKEN=${ACCESS_TOKEN}
       - BEAR_TOKEN=${BEAR_TOKEN}
       - GITHUB_SECRET=${GITHUB_SECRET}
-      - APP_PORT=${APP_PORT}
+      - APP_PORT=${APP_PORT:-8080}
     volumes:
       - ./app:/opt/app
     networks:
