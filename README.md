@@ -65,7 +65,7 @@ After accessing ngrok container via your browser by going to localhost:**APP_POR
 this url will have to be registered into your github account webhook section:
 https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
 
-![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Receiver_url_ngrok.gif)
+![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Gif_master_protected.gif)
 
 
 End with an example of getting some data out of the system or using it for a little demo
