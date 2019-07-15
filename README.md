@@ -50,7 +50,7 @@ After, access ngrok container via your browser by going to localhost:**APP_PORT*
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Ngrok_img.png)
 
 this url will have to be registered into your github account webhook section:
-https://github.com/organizations/**organizationname**/settings/**hooks**
+https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
 
 End with an example of getting some data out of the system or using it for a little demo
 
