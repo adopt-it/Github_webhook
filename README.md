@@ -19,9 +19,9 @@ Optional:
 
 Since the webservice will be launched as a microservice, it can be platform-independent as long as the following requirements are satisfied and installed onto the OS:
 ```
-Docker-Compose
-Docker
-Github client
+Docker-Compose (tested on version 3.7)
+Docker (tested on version 18.09.0, build 4d60db4)
+Github client (tested on version 2.18.0)
 ```
 For reference, the webservice was tested under MacOS Mojave 10.14.5.
 
@@ -75,58 +75,36 @@ Moreover, after creating a new github repository, the following actions are goin
 
 ![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Gif_master_protected.gif))
 
-
-## Running the tests ⚙️
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests ⌨️
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment 📦
 
-Add additional notes about how to deploy this on a live system
+These webservice can also be deployed for testing into multiple cloud platforms and/or OS, but not yet for production full usage. For instance:
+* AWS (Amazon Web Services)
+* Google Cloud Platform
+* Digital Ocean
+* Locally if needed
+and the list goes on. 
+
+Also, It is recommended to run it on a Unix-based OS.
 
 ## Built With 🛠️
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing 🖇️
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning 📌
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Docker compose](http://www.dropwizard.io/1.0.2/docs/) - Tool for defining multi-container apps.
+* [Python](https://www.python.org/) - Intrerpreted programming language.
+* [Github API] (https://developer.github.com/webhooks/#events) - GitHub API for the operations.
+* [Flask web framework](https://flask.palletsprojects.com/en/1.0.x/) - Used to create the webservice in a more robust way.
+* [Ngrok](https://ngrok.com/) - Used to generate public url's with embedded security for exposing web services, applications, etc.
 
 ## Authors ✒️
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Carlos Klinsmann** - *First Version* 
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU License 
 
 ## Acknowledgments 🎁
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-*https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
+* Github API & valuable resources.
+* Inspiration on the GithHub template: https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
+* Flask documentation.
+* References like https://www.digitalocean.com/community/tutorials/how-to-use-web-apis-in-python-3, https://github.com/PyGithub/PyGithub
