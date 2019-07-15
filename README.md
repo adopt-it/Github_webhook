@@ -57,7 +57,7 @@ docker-compose up -d --build --force-recreate
 - One with Ngrok to generate a publicly available link, which the github webhook will send events to. The url can be found on the Ngrok web panel, which has been launched into localhost:**PANEL_PORT** as per the property file.
 - Another one with the python webhook receiving github webhook events and acting accordingly.
 
-![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
+![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/screen_docker.png)
 
 After accessing ngrok container via your browser by going to localhost:**APP_PORT** with the port you have indicated into the property file, the status tab will depict the webhook url to specify into your github account:
 <img src="https://github.com/adopt-it/Github_webhook/blob/api_challenge/Ngrok_WebPanel.png" width="400" height="400">
@@ -65,7 +65,7 @@ After accessing ngrok container via your browser by going to localhost:**APP_POR
 this url will have to be registered into your github account webhook section:
 https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
 
-![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Receiver_url_ngrok.gif)
+![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Receiver_url_ngrok.gif)
 
 Next, you can go ahead to create a new repository within your organization in order that the githook webservice starts listening to github events. 
 Moreover, after creating a new github repository, the following actions are going to be carried out:
@@ -73,7 +73,7 @@ Moreover, after creating a new github repository, the following actions are goin
 * A new issue will be opened stating which actions have been performed onto the repo and with a @mention to the user who launched it.
 * E-mail will be sent from github to the user.
 
-![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Gif_master_protected.gif)
+![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Gif_master_protected.gif)
 
 ## Deployment 📦
 
