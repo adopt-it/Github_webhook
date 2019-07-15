@@ -12,6 +12,9 @@ First, some things you will need:
 * An organization (you can create one for free)
 * A repository
 
+Optional: 
+* Since Ngrok creates a public url for your webservice, an optional Ngrok account can be created in order that the Ngrok url does not time out. (https://dashboard.ngrok.com/login)
+
 ### Prerequisites 📋
 
 Since the webservice will be launched as a microservice, it will be platform-independent as long as the following requirements are satisfied and installed onto the OS:
@@ -54,11 +57,12 @@ docker-compose up -d --build --force-recreate
 
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/screen_docker.png)
 
-After, access ngrok container via your browser by going to localhost:**APP_PORT**, with the port you have indicated into the properties .env file to obtain the webservice url to be the webhook listener for your github account:
+After, access ngrok container via your browser by going to localhost:**APP_PORT**, with the port you have indicated into the properties .env file to obtain the webservice url to be used as the webhook listener for your github account:
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/Ngrok_img.png)
 
 this url will have to be registered into your github account webhook section:
 https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
+
 
 End with an example of getting some data out of the system or using it for a little demo
 
