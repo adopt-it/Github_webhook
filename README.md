@@ -14,7 +14,7 @@ First, some things you will need:
 
 Optional: 
 
-* Since Ngrok creates a public url for your webservice (in this case the github webhook url), an optional Ngrok account (https://dashboard.ngrok.com/login) can be created in order that the public Ngrok url does not time out. 
+* Since Ngrok creates a public url for your webservice (in this case the github webhook url), an optional [Ngrok account](https://dashboard.ngrok.com/login) can be created in order that the public Ngrok url does not time out. 
 
 ### Prerequisites 📋
 
