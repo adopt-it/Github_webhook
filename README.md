@@ -84,6 +84,7 @@ Moreover, after creating a new github repository, the following actions are goin
 ## Testing ⚙️
 
 Testing master branch protection on the newly created git repository with one user within the organization **adopt-it**:
+
 ![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Git_masterEnabledProtected.gif)
 
 ## Deployment 📦
