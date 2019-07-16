@@ -114,7 +114,7 @@ Also, It is recommended to run it on a Unix-based OS.
 
 This project is licensed under the GNU License 
 
-## Acknowledgments 🎁
+## Acknowledgements 🎁
 
 * Github API & valuable resources.
 * Inspiration on the GithHub template: https://gist.githubusercontent.com/Villanuevand/6386899f70346d4580c723232524d35a/raw/8028158f59ba1995b0ca1afd3173bac3df539ca0/README-espa%25C3%25B1ol.md
