@@ -68,7 +68,7 @@ Besides, I created the following:
 * an organization called "**adopt-it**"
 * and further on as part of the demo, a new repository called "**Git_test_repo**" is being added.
 
-this url will have to be registered into your github account webhook section:
+This url will have to be registered into your github account webhook section:
 https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
 
 ![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Receiver_url_ngrok.gif)
@@ -108,11 +108,11 @@ Also, It is recommended to run it on a Unix-based OS.
 
 ## Authors ✒️
 
-* **Carlos Klinsmann** - *First Version* 
+* **Carlos Klinsmann** - *First Version*.
 
 ## License 📄
 
-This project is licensed under the GNU License 
+This project is licensed under the GNU License .
 
 ## Acknowledgements 🎁
 
