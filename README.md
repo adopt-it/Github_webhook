@@ -61,6 +61,7 @@ docker-compose up -d --build --force-recreate
 ![alt text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/screen_docker.png)
 
 After accessing ngrok container via your browser by going to localhost:**APP_PORT** with the port you have indicated into the property file, the status tab will depict the webhook url to specify into your github account:
+
 <img src="https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Ngrok_WebPanel.png" width="400" height="400">
 
 Besides, I created the following:
