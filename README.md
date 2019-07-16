@@ -13,6 +13,7 @@ First, some things you will need:
 * A github repository
 
 Optional: 
+
 * Since Ngrok creates a public url for your webservice (in this case the github webhook url), an optional Ngrok account (https://dashboard.ngrok.com/login) can be created in order that the public Ngrok url does not time out. 
 
 ### Prerequisites 📋
@@ -62,6 +63,10 @@ docker-compose up -d --build --force-recreate
 After accessing ngrok container via your browser by going to localhost:**APP_PORT** with the port you have indicated into the property file, the status tab will depict the webhook url to specify into your github account:
 <img src="https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Ngrok_WebPanel.png" width="400" height="400">
 
+Besides, I created the following:
+* an organization called "**adopt-it**"
+* and further on as part of the demo, a new repository called "**Git_test_repo**" is being added.
+
 this url will have to be registered into your github account webhook section:
 https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
 
@@ -74,6 +79,10 @@ Moreover, after creating a new github repository, the following actions are goin
 * E-mail will be sent from github to the user.
 
 ![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Gif_master_protected.gif)
+
+## Testing ⚙️
+Testing master branch protection on the newly created git repository with one user within the organization adopt-it:
+![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Git_masterEnabledProtected.gif)
 
 ## Deployment 📦
 
