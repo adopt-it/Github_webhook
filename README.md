@@ -75,7 +75,7 @@ https://github.com/organizations/[:organizationname:]/settings/[:hooks:]
 Next, you can go ahead to create a new repository within your organization in order that the githook webservice starts listening to github events. 
 Moreover, after creating a new github repository, the following actions are going to be carried out:
 * Protection of the master branch belonging to the new repo
-* A new issue will be opened stating which actions have been performed onto the repo and with a @mention to the user who launched it.
+* A new issue will be opened stating which actions have been performed onto the repo and with a @mention addressed to the user who launched it.
 * E-mail will be sent from github to the user.
 
 ![Alt Text](https://github.com/adopt-it/Github_webhook/blob/api_challenge/media/Gif_master_protected.gif)
